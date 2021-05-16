@@ -151,7 +151,7 @@ def get_app(release_dir):
 #         print("Failed: parsing json in output file")
 #         return None, None
 
-    app_version = json_data["elements"][0]['version']
+    app_version = json_data["elements"][0]['versionName']
     app_file = os.path.join(release_dir, json_data["elements"][0]['outputFile'])
 #     app_version = "1.0.0"
 #     app_file = os.path.join(release_dir,"app-release.apk")
