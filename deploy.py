@@ -154,7 +154,7 @@ def get_app(release_dir):
 #     app_version = json_data[0][apk_details_key]['versionName']
 #     app_file = os.path.join(release_dir, json_data[0][apk_details_key]['outputFile'])
     app_version = "1.0.0"
-    app_file = "app-release.apk"
+    app_file = os.path.join(release_dir,"app-release.apk")
     return app_version, app_file
 
 
